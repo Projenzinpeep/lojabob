@@ -25,6 +25,7 @@ function selecionaPorId(id){
     connection.query(sql,id, function(error,results,fields){
         if(error) throw error
         console.log("Selecionado: " + results[0].id + ":" + results[0].login + ":" + results[0].email)
+
     })
 }
 
@@ -51,11 +52,11 @@ function apagar(id){
     })
 }
 
-apagar(44)
 
-selecionarTudo()
 
-//inserir("Enzo","99999","enzo99@gmail.com")
+
+
+
 
 connection.end()
 
